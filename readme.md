@@ -3,9 +3,9 @@
 * /frontend : Ce répertoire contient l'application client. Développée avec React, elle est responsable de l'affichage de l'interface utilisateur et des interactions
 
 ## Gestionnaire de Tâches (To-Do List)
-** Concept : L'application web la plus classique pour débuter.
-** Données : Tâche (id, texte, isCompleted).
-** Opérations CRUD :
+- Concept : L'application web la plus classique pour débuter.
+- Données : Tâche (id, texte, isCompleted).
+- Opérations CRUD :
         'CREATE' : Ajouter une nouvelle tache.
         'READ' : Afficher toutes les taches.
         'UPDATE' : Marquer une tache comme "complétée".
