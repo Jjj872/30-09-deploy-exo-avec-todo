@@ -102,9 +102,11 @@ Après quelques secondes, Vercel vous fournit une URL publique du type :
 
 - Connecter front et back :
 
-1. ```fetch("https://todo-list-api.onrender.com/tasks") ```
+1. 
+```javascript
+fetch("[https://todo-list-api.onrender.com/tasks](https://todo-list-api.onrender.com/tasks)")
   .then(res => res.json())
-  .then(data => console.log(data));``
+  .then(data => console.log(data));
 
 - Vérifier le front : 
 1. Ouvrez l’application [`https://todo-list-frontend.vercel.app`](https://todo-list-frontend.vercel.app)  
