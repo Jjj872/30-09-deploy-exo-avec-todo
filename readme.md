@@ -28,17 +28,17 @@ Prérequis :
 - git clone https://github.com/Jjj872/30-09-deploy-exo-avec-todo
 
 2. Configuration et Lancement du Back-end :
-- Naviguez vers le dossier backend : "cd backend"
-- Installez les dépendances : "npm install"
+- Naviguez vers le dossier backend : `cd backend`
+- Installez les dépendances : `npm install`
 - Créez un fichier .env à la racine de ce dossier avec votre chaîne de connexion MongoDB et le port exemple : 
-        MONGO_URI="mongodb://localhost:27017/nomdeladb"
-        PORT=3001
-- Lancez le serveur : "nodemon app.js"         
+        ```MONGO_URI="mongodb://localhost:27017/nomdeladb
+        PORT=3001```
+- Lancez le serveur : `nodemon app.js`        
 
  3. Configuration et Lancement du Front-end : 
- - Retournez au dossier racine et naviguez vers le front-end : "cd frontend"
- - Installez les dépendances : "npm install"
- - Lancez l'application : "npm run dev"
+ - Retournez au dossier racine et naviguez vers le front-end : `cd frontend`
+ - Installez les dépendances : `npm install`
+ - Lancez l'application : `npm run dev`
 
 
 ## Les endpoints
