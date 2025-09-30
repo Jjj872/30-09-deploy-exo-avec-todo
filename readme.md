@@ -41,6 +41,77 @@ Prérequis :
  - Lancez l'application : `npm run dev`
 
 
+## Déploiement en Ligne
+### Déployer le back-end
+Nous allons utiliser **Render**, une plateforme gratuite et simple pour héberger un serveur.
+
+- Connexion à Render
+1. Rendez-vous sur : [https://dashboard.render.com/](https://dashboard.render.com/login)
+2. Cliquez sur **Sign Up** (si vous n’avez pas de compte) ou **Log In** (si vous en avez déjà un)
+3. Une fois connecté, cliquez sur **“Skip”** 
+
+- Créer un nouveau service
+1. Cliquez sur **“+ Add New”**
+2. Sélectionnez **“Web Service”**
+3. Connectez Render à votre compte **GitHub**
+4. Choisissez le dépôt du projet que vous voulez déployer
+    - Dans mon cas : **to-do-list-api**
+
+- Configuration du service
+- **Nom** : donnez un nom à votre service (exemple : `todo-list-backend`)
+- **Branche** : sélectionnez la branche principale du projet (généralement `main`)
+- **Build Command** : `npm run build`
+- **Start Command** : `npm start`
+- **Instance Type** : choisissez l’offre gratuite (Free).
+
+- Lancer le déploiement
+Cliquez sur **“Create Web Service”** → Render va automatiquement :
+- Installer vos dépendances (`npm install`)
+- Lancer votre commande de build
+- Démarrer le serveur
+
+### Déployer le front-end
+Nous allons utiliser Vercel, une plateforme gratuite et simple pour la mise en ligne.
+
+- Connexion à Vercel
+1. Rendez-vous sur : `https://vercel.com/`
+2. Cliquez sur **Sign Up** (si vous n’avez pas de compte) ou **Log In** (si vous en avez déjà un)
+3. Connectez-vous avec **GitHub** pour importer directement vos projets
+
+- Importer votre projet
+1. Cliquez sur **“Add New Project”**
+2. Choisissez le dépôt GitHub qui contient votre **front-end** (par ex. `to-do-list-front`)
+3. Vérifiez que Vercel a bien détecté votre technologie :
+    - **React** → Vercel reconnaît automatiquement
+    - **HTML/CSS/JS classique** → choisissez **“Other”**
+
+- Configuration du projet
+- **Nom du projet** : ex. `todo-list-frontend`
+- **Framework Preset** : choisissez celui qui correspond (React, Vue, etc.)
+- **Build Command** (si besoin, pour React par ex.) :
+
+-  Lancer le déploiement
+Cliquez sur Deploy.
+Après quelques secondes, Vercel vous fournit une URL publique du type :
+`https://todo-list-frontend.vercel.app`
+
+- front et back
+
+- Back-end : hébergé sur Render → `https://todo-list-backend-pbj6.onrender.com`
+- Front-end : hébergé sur Vercel → `https://30-09-deploy-exo-avec-todo.vercel.app/`
+
+- Connecter front et back
+```fetch("https://todo-list-api.onrender.com/tasks")
+  .then(res => res.json())
+  .then(data => console.log(data));```.
+
+- Vérifier le front
+1. Ouvrez l’application [`https://todo-list-frontend.vercel.app`](https://todo-list-frontend.vercel.app)  
+2. Testez l’application :
+    - Ajouter un tache
+    - Supprimer une tache
+
+
 ## Les endpoints
 - GET     /todo       -- Pour récupérer tous les élements de liste
 - GET     /todo/:id   -- Récuperer un élements de liste en particulier
