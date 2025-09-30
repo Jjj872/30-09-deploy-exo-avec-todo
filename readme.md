@@ -12,11 +12,11 @@
         'DELETE' : Supprimer une tache.
 
 ## Technologies Utilisées 
-COMPOSANT         --   TECHNOLOGIE    --   ROLE
-Front-end         --   React          --   Création de l'interface utilisateur dynamique.
-Back-End/Api      --   Node.js        --   Serveur de l'API RESTful pour la gestion des données.
-Base Données      --   Mongo.db       --   Stockage des tâches.
-Gestion paquets   --   npm            --   Installation et gestion des dépendances côté client et serveur.
+- COMPOSANT         --   TECHNOLOGIE    --   ROLE
+- Front-end         --   React          --   Création de l'interface utilisateur dynamique.
+- Back-End/Api      --   Node.js        --   Serveur de l'API RESTful pour la gestion des données.
+- Base Données      --   Mongo.db       --   Stockage des tâches.
+- Gestion paquets   --   npm            --   Installation et gestion des dépendances côté client et serveur.
 
 
 ##  Installation et Lancement en Local
