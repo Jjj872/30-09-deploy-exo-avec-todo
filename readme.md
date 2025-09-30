@@ -100,12 +100,13 @@ Après quelques secondes, Vercel vous fournit une URL publique du type :
 1. Back-end : hébergé sur Render → `https://todo-list-backend-pbj6.onrender.com`
 2. Front-end : hébergé sur Vercel → `https://30-09-deploy-exo-avec-todo.vercel.app/`
 
-- Connecter front et back
-```javascript fetch("https://todo-list-api.onrender.com/tasks") ```
+- Connecter front et back :
+
+1. ```fetch("https://todo-list-api.onrender.com/tasks") ```
   .then(res => res.json())
   .then(data => console.log(data));``
 
-- Vérifier le front
+- Vérifier le front : 
 1. Ouvrez l’application [`https://todo-list-frontend.vercel.app`](https://todo-list-frontend.vercel.app)  
 2. Testez l’application :
     - Ajouter un tache.
