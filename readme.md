@@ -57,18 +57,18 @@ Nous allons utiliser **Render**, une plateforme gratuite et simple pour héberge
 4. Choisissez le dépôt du projet que vous voulez déployer
     - Dans mon cas : **to-do-list-api**
 
-- Configuration du service
-- **Nom** : donnez un nom à votre service (exemple : `todo-list-backend`)
-- **Branche** : sélectionnez la branche principale du projet (généralement `main`)
-- **Build Command** : `npm run build`
-- **Start Command** : `npm start`
-- **Instance Type** : choisissez l’offre gratuite (Free).
+#### Configuration du service
+1. **Nom** : donnez un nom à votre service (exemple : `todo-list-backend`)
+2. **Branche** : sélectionnez la branche principale du projet (généralement `main`)
+3. **Build Command** : `npm run build`
+4. **Start Command** : `npm start`
+5. **Instance Type** : choisissez l’offre gratuite (Free).
 
-- Lancer le déploiement
-Cliquez sur **“Create Web Service”** → Render va automatiquement :
-- Installer vos dépendances (`npm install`)
-- Lancer votre commande de build
-- Démarrer le serveur
+#### Lancer le déploiement
+- Cliquez sur **“Create Web Service”** → Render va automatiquement :
+1. Installer vos dépendances (`npm install`)
+2. Lancer votre commande de build
+3. Démarrer le serveur
 
 ### Déployer le front-end
 Nous allons utiliser Vercel, une plateforme gratuite et simple pour la mise en ligne.
@@ -85,31 +85,31 @@ Nous allons utiliser Vercel, une plateforme gratuite et simple pour la mise en l
     - **React** → Vercel reconnaît automatiquement
     - **HTML/CSS/JS classique** → choisissez **“Other”**
 
-- Configuration du projet
-- **Nom du projet** : ex. `todo-list-frontend`
-- **Framework Preset** : choisissez celui qui correspond (React, Vue, etc.)
-- **Build Command** (si besoin, pour React par ex.) :
+#### Configuration du projet
+1. **Nom du projet** : ex. `todo-list-frontend`
+2. **Framework Preset** : choisissez celui qui correspond (React, Vue, etc.)
+3. **Build Command** (si besoin, pour React par ex.) :
 
--  Lancer le déploiement
+-  Lancer le déploiement :
 Cliquez sur Deploy.
 Après quelques secondes, Vercel vous fournit une URL publique du type :
 `https://todo-list-frontend.vercel.app`
 
-- front et back
+#### front et back
 
-- Back-end : hébergé sur Render → `https://todo-list-backend-pbj6.onrender.com`
-- Front-end : hébergé sur Vercel → `https://30-09-deploy-exo-avec-todo.vercel.app/`
+1. Back-end : hébergé sur Render → `https://todo-list-backend-pbj6.onrender.com`
+2. Front-end : hébergé sur Vercel → `https://30-09-deploy-exo-avec-todo.vercel.app/`
 
 - Connecter front et back
-```fetch("https://todo-list-api.onrender.com/tasks")
+``fetch("https://todo-list-api.onrender.com/tasks")
   .then(res => res.json())
-  .then(data => console.log(data));```.
+  .then(data => console.log(data));``
 
 - Vérifier le front
 1. Ouvrez l’application [`https://todo-list-frontend.vercel.app`](https://todo-list-frontend.vercel.app)  
 2. Testez l’application :
-    - Ajouter un tache
-    - Supprimer une tache
+    - Ajouter un tache.
+    - Supprimer une tache.
 
 
 ## Les endpoints
