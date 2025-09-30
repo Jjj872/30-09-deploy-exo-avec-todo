@@ -42,11 +42,11 @@ Prérequis :
 
 
 ## Les endpoints
-GET     /todo       -- Pour récupérer tous les élements de liste
-GET     /todo/:id   -- Récuperer un élements de liste en particulier
-POST    /todo       -- Créer un élément de liste  
-PATCH   /todo/:id   -- Modifier un élément de liste pour le passer à !isCompleted
-DELETE  /todo/:id   -- Supprimer un élément de 
+- GET     /todo       -- Pour récupérer tous les élements de liste
+- GET     /todo/:id   -- Récuperer un élements de liste en particulier
+- POST    /todo       -- Créer un élément de liste  
+- PATCH   /todo/:id   -- Modifier un élément de liste pour le passer à !isCompleted
+- DELETE  /todo/:id   -- Supprimer un élément de 
 
 
 ## Schema de données 
