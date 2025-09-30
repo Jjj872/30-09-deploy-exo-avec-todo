@@ -101,7 +101,7 @@ Après quelques secondes, Vercel vous fournit une URL publique du type :
 2. Front-end : hébergé sur Vercel → `https://30-09-deploy-exo-avec-todo.vercel.app/`
 
 - Connecter front et back
-``fetch("https://todo-list-api.onrender.com/tasks")
+```javascript fetch("https://todo-list-api.onrender.com/tasks") ```
   .then(res => res.json())
   .then(data => console.log(data));``
 
